@@ -1272,3 +1272,323 @@ footer {
     flex-wrap: wrap;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Skill Test */
+
+.test-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.test-main {
+  width: 84%;
+  max-width: 900px;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.test-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.test-header h1 {
+  font-size: 32px;
+  margin: 8px 0;
+}
+
+.test-header p:last-child {
+  color: #64748b;
+}
+
+.question-counter {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.test-progress {
+  height: 7px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.test-progress div {
+  height: 100%;
+  background: #4f46e5;
+  transition: width 0.3s;
+}
+
+.question-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 35px;
+}
+
+.question-number {
+  color: #4f46e5;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.question-card h2 {
+  font-size: 23px;
+  margin-bottom: 28px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 9px;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transition: 0.2s;
+}
+
+.option:hover {
+  border-color: #4f46e5;
+}
+
+.option.selected {
+  border-color: #4f46e5;
+  background: #eef2ff;
+  color: #3730a3;
+}
+
+.option-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.test-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.previous-btn,
+.next-btn,
+.submit-test-btn {
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.previous-btn {
+  border: 1px solid #d1d5db;
+  background: white;
+  color: #374151;
+}
+
+.previous-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.next-btn,
+.submit-test-btn {
+  border: none;
+  background: #4f46e5;
+  color: white;
+}
+
+.question-list {
+  margin-top: 25px;
+  background: white;
+  padding: 22px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.question-list h3 {
+  margin-bottom: 15px;
+}
+
+.question-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.question-buttons button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d1d5db;
+  background: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.question-buttons .active-question {
+  border-color: #4f46e5;
+  background: #4f46e5;
+  color: white;
+}
+
+.question-buttons .answered-question {
+  border-color: #818cf8;
+}
+
+@media (max-width: 650px) {
+  .test-main {
+    width: 90%;
+  }
+
+  .test-header {
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .test-header h1 {
+    font-size: 25px;
+  }
+
+  .question-card {
+    padding: 22px;
+  }
+}
+
+
+
+/* Test Selection */
+
+.tests-page {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.tests-main {
+  width: 84%;
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.tests-heading {
+  margin-bottom: 35px;
+}
+
+.tests-heading h1 {
+  font-size: 34px;
+  margin: 8px 0;
+}
+
+.tests-heading > p:last-child {
+  color: #64748b;
+}
+
+.test-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.test-selection-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 25px;
+  transition: 0.2s;
+}
+
+.test-selection-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.test-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+
+.test-selection-card h2 {
+  margin-bottom: 10px;
+}
+
+.test-selection-card > p {
+  color: #64748b;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.test-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding-top: 15px;
+  border-top: 1px solid #e5e7eb;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.start-test-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.start-test-btn:hover {
+  background: #4338ca;
+}
+
+@media (max-width: 900px) {
+  .test-selection-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .tests-main {
+    width: 90%;
+  }
+
+  .test-selection-grid {
+    grid-template-columns: 1fr;
+  }
+}

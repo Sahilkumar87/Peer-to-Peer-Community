@@ -38,8 +38,8 @@ function Home() {
               Get Started
             </Link>
 
-            <Link to="/login" className="secondary-btn">
-              Login
+            <Link to="/select-test" className="secondary-btn">
+              Test
             </Link>
           </div>
         </div>

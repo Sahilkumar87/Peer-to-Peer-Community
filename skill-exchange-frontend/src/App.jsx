@@ -7,6 +7,8 @@ import Profile from "./pages/Profile";
 import FindPartner from "./pages/FindPartner";
 import Sessions from "./pages/Sessions";
 import Resources from "./pages/Resources";
+import Test from "./pages/skillTest/Test";
+import SelectTest from './pages/skillTest/SelectTest';
 
 
 
@@ -25,6 +27,9 @@ function App() {
         <Route path="/partners" element={<FindPartner />} />
         <Route path="/sessions" element={<Sessions />} />
         <Route path="/resources" element={<Resources />} />
+        
+        <Route path="/test" element={<Test />} />
+        <Route path="/select-test" element={<SelectTest />} />
       </Routes>
     </BrowserRouter>
   );

@@ -14,10 +14,10 @@ function Login() {
         <form>
 
           <div className="form-group">
-            <label>College Email</label>
+            <label>College ID</label>
             <input
-              type="email"
-              placeholder="Enter your college email"
+              type="number"
+              placeholder="Enter your college Id"
             />
           </div>
 

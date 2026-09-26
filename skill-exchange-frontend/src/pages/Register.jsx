@@ -24,10 +24,10 @@ function Register() {
 
           {/* Email */}
           <div className="form-group">
-            <label>College Email</label>
+            <label>College ID</label>
             <input
               type="email"
-              placeholder="Enter your college email"
+              placeholder="Enter your college id"
             />
           </div>
 
@@ -52,47 +52,8 @@ function Register() {
 
           </div>
 
-          {/* Skills */}
-          <div className="form-group">
-            <label>Skills I Can Teach</label>
-            <input
-              type="text"
-              placeholder="Example: DSA, Video Editing"
-            />
-          </div>
 
-          <div className="form-group">
-            <label>Skills I Want to Learn</label>
-            <input
-              type="text"
-              placeholder="Example: React, UI Design"
-            />
-          </div>
 
-          {/* Experience */}
-          <div className="form-group">
-            <label>Experience Level</label>
-
-            <select>
-              <option value="">Select experience level</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-          </div>
-
-          {/* Availability */}
-          <div className="form-group">
-            <label>Availability</label>
-
-            <select>
-              <option value="">Select availability</option>
-              <option>Weekday Morning</option>
-              <option>Weekday Evening</option>
-              <option>Weekend</option>
-              <option>Flexible</option>
-            </select>
-          </div>
 
           <button type="submit" className="auth-btn">
             Create Account
