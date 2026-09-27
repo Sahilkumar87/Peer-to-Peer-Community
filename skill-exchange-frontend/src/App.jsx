@@ -22,12 +22,10 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        
         <Route path="/profile" element={<Profile />} />
         <Route path="/partners" element={<FindPartner />} />
         <Route path="/sessions" element={<Sessions />} />
         <Route path="/resources" element={<Resources />} />
-        
         <Route path="/test" element={<Test />} />
         <Route path="/select-test" element={<SelectTest />} />
       </Routes>
